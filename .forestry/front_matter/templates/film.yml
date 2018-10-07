@@ -1,0 +1,79 @@
+---
+label: Projects
+hide_body: false
+is_partial: false
+fields:
+- name: title
+  label: Title
+  type: text
+  hidden: false
+  default: ''
+- name: layout
+  label: Layout
+  type: text
+  hidden: false
+  default: ''
+- name: date
+  label: Date
+  type: datetime
+  hidden: false
+  default: ''
+- name: featured_image
+  label: Featured image
+  type: text
+  hidden: false
+  default: ''
+- name: subtitle
+  label: Subtitle
+  type: text
+  hidden: false
+  default: ''
+- name: client_url
+  label: Client url
+  type: text
+  hidden: false
+  default: ''
+- name: client_testimonials
+  label: Client testimonials
+  type: text
+  hidden: false
+  default: ''
+- name: img1
+  label: Img1
+  type: text
+  hidden: false
+  default: ''
+- name: img2
+  label: Img2
+  type: text
+  hidden: false
+  default: ''
+- name: description
+  label: Description
+  type: text
+  hidden: false
+  default: ''
+- name: tag
+  label: Tag
+  type: tag_list
+  hidden: false
+  default: ''
+- name: img3
+  label: Img3
+  type: text
+  hidden: false
+  default: ''
+- name: id
+  label: Id
+  type: text
+  hidden: false
+  default: ''
+- name: youtubeId
+  label: Youtubeid
+  type: text
+  hidden: false
+  default: ''
+pages:
+- _projects/Conceptual_Photography.html
+- _projects/KeralaMural.md
+- _projects/Illustration.html
