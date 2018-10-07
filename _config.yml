@@ -4,7 +4,7 @@ tagline: By Sruthi Nambiar
 description: > # this means to ignore newlines until "baseurl:"
  My name is Sruthi P Nambiar and this website is my way of expressing my artistic journey.
  Bon Voyage.
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "/theblackline" # the subpath of your site, e.g. /blog
 url: "https//:theblackline.design/" # the base hostname & protocol for your site
 
 google_analytics_key: "UA-126668253-1 "
