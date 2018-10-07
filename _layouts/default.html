@@ -1,0 +1,53 @@
+{% comment %}
+	
+
+	Name:
+
+		Default layout
+
+	Description:
+
+		Basic HTML foundation for all pages.
+
+	Example:
+
+		---
+		layout: default
+		---
+
+{% endcomment %}
+
+<!DOCTYPE HTML>
+<html>
+	<!-- <head>
+		<title>Untitled</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+		<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="{{ site.baseurl }}/assets/css/noscript.css" /></noscript>
+	</head> -->
+	{% include head.html %}
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+				{{ content }}
+
+				<!-- Footer -->
+					<footer id="footer">
+						<p class="copyright">&copy; {{site.title}}.</p>
+						<p>Powered by: www.augustwebsolutions.com</p>
+					</footer>
+			</div>
+
+		<!-- BG -->
+			<div id="bg">
+				
+			</div>
+
+		<!-- Scripts -->
+		{% include scripts.html %}
+
+	</body>
+</html>

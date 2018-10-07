@@ -1,0 +1,15 @@
+---
+html_id: blog
+title: Blog
+headerimage: "/uploads/13043308_1001742843248540_1432149895522473727_n.jpg"
+layout: basic
+sub-title: ''
+description: ''
+---
+
+    {% for p in site.posts %}     
+                <h3 class="major"> {{ p.title }}</a></h3>
+
+                <span class="image main"><img src="{{ site.baseurl }}/{{ p.headerimage }}" alt="{{ p.title }}" /></span>
+            <p>{{p.output}}</p>
+    {% endfor %}		

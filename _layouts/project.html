@@ -1,0 +1,18 @@
+
+<h2 class="major">{{ page.title }}</h2>
+<span class="image main"><img src="{{ site.baseurl }}{{ page.featured_image }}" alt="{{ page.title }}" /></span>
+<p>{{page.subtitle}}</p>
+{% if  page.img1 != nil  %}
+<span class="image main"><img src="{{ site.baseurl }}{{ page.img1 }}" alt="{{ page.title }}" /></span>
+{% endif %}
+{% if  page.img2 != nil   %}
+<span class="image main"><img src="{{ site.baseurl }}{{ page.img2 }}" alt="{{ page.title }}" /></span>
+{% endif %}
+{% if  page.img3 != nil   %}
+<span class="image main"><img src="{{ site.baseurl }}{{ page.img3 }}" alt="{{ page.title }}" /></span>
+{% endif %}
+
+<p>{{content}}</p>
+{% if page.youtubeId != nil  %}
+{% include youtubePlayer.html id=page.youtubeId %}
+{% endif %}

@@ -1,0 +1,92 @@
+# Site settings
+title: The BlackLine
+tagline: By Sruthi Nambiar
+description: > # this means to ignore newlines until "baseurl:"
+ My name is Sruthi P Nambiar and this website is my way of expressing my artistic journey.
+ Bon Voyage.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https//:theblackline.design/" # the base hostname & protocol for your site
+
+google_analytics_key: "UA-126668253-1 "
+google_maps_javascript_api_key:
+disqus_shortname:
+newsletter_action: ""
+contact_action: "https://docs.google.com/forms/d/e/1FAIpQLSeRURY8q_apjL6E7XL4yTF7sxZzWc8EkygoY4_GXb_aJWSPTQ/formResponse"
+
+#For Seo
+logo: /TheBlackLineLogo.png
+paginate: 10
+paginate_path: "/advice/:num/"
+
+collections:
+  projects:
+    output: true
+    permalink: /work/:path/  
+  testimonials:
+    output: true
+    permalink: /testimonials/:path/
+  panels:
+    output: true
+
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: default
+      background_image_path: 
+      image: 
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: default
+      _options:
+        content:
+          width: 960
+          height: 2000
+      _comments:
+        image: Shown in social shares and the advice list.
+    
+permalink: pretty
+
+jekyll-archives:
+  enabled:
+    - categories  
+
+# Build settings
+markdown: kramdown
+sass:
+  sass_dir: assets/sass
+
+# Collections
+# Add new panels as HTML files inside the _panels folder
+compress_html:
+  clippings: all
+  comments: ["<!-- ", " -->"]
+  endings: all
+  ignore:
+    envs: [local]
+  blanklines: false
+  profile: false
+  startings: [html, head, body]  
+
+plugins:
+  - jekyll-archives
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-feed
+  - jekyll-paginate
+ 
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - LICENCE
+  - gulpfile.js
+  - node_modules
+  - package.json
+ 
+
+include: ['.htaccess']  
