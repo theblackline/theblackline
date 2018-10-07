@@ -74,5 +74,6 @@ fields:
   hidden: false
   default: ''
 pages:
+- _projects/Conceptual_Photography.html
 - _projects/KeralaMural.md
 - _projects/Illustration.html
